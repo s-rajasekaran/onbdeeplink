@@ -22,7 +22,14 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": ["src/favicon.ico", "src/assets"],
+            "assets": [
+              "src/.well-known/apple-app-site-association",
+              {"glob":"apple-app-site-association","input":"src/.well-known","output":"/"},
+              "src/.well-known/assetlinks.json",
+              {"glob":"assetlinks.json","input":"src/.well-known","output":"/"},
+              "src/favicon.ico", 
+              "src/assets"
+            ],
             "styles": ["src/styles.css"],
             "scripts": []
           },
