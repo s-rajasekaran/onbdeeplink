@@ -1,9 +1,0 @@
-{
-    "staticWebApps.outputSubpath": "dist/angular-basic",
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}",
-        ".vscode{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/d8d2ab14-8e58-4329-a162-83ecd41f170a/resourceGroups/mobileapp/providers/Microsoft.Web/sites/onbdeeplink",
-    "appService.deploySubpath": "."
-}
