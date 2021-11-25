@@ -52,4 +52,4 @@ jobs:
         with:
           app-name: 'onb-mobile'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_36D585B0D7B84927BFCB333BE73C93E9 }}
-          package: ./dist/hello-world-app
+          package: ./dist/onbdeeplink
