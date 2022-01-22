@@ -2,12 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Onbdeeplink</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Oaknorth Instant Funding">
+  <title>Oaknorth Instant Funding</title>
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
+ <!-- CSS only -->
+ <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+ <link href="./assets/css/main.css" rel="stylesheet">
+ <title>Oaknorth Instant Funding</title>
+ <!-- JavaScript Bundle with Popper -->
+ <script src="./assets/js/bootstrap.bundle.min.js.download" crossorigin="anonymous"></script>
+ <!-- <script type="text/javascript">
+   (function () {
+     var cnt = 0;
+     var isloadedOnce = window.sessionStorage.getItem("l");
+     if (!window.location.hash) {               
+       window.location = window.location + "#sucess";
+       window.sessionStorage.setItem("l", cnt)
+       window.location.reload();
+     }
+   })();
+ </script> -->
 </head>
-<body>
+<body class="bg-light">
   <app-root></app-root>
+  <script>
+    function loadApp() {
+      window.location.reload();
+    }
+  </script>
 </body>
 </html>

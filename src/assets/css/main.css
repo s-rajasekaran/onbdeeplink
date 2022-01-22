@@ -1,0 +1,22 @@
+.pt-80 {
+  padding-top: 80px;
+}
+
+.bg-green {
+  background: rgb(57, 172, 124);
+  border-color: rgb(57, 172, 124);
+  color:white;
+}
+
+.bg-green:hover{
+    background: rgb(0,83,80);
+    border-color: rgb(0,83,80);
+    color:white;
+}
+
+.bg-green:focus{
+    background: rgb(0,83,80);
+    border-color: rgb(0,83,80);
+    box-shadow: 0 0 0 0.25rem rgb(0 83 80 / 50%);
+    color:white;
+}
