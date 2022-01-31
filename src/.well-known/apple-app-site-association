@@ -3,8 +3,20 @@
     "apps": [],
     "details": [
       {
-        "appID": "XTAY62F35G.com.oaknorth.bonsai.test",
-        "paths": ["/InstantFundSuccess/*"]
+        "appID": "XTAY62F35G.com.oaknorth.bonsai.development",
+        "paths": ["/instantfunding/*"]
+      },
+	{
+        "appID": "XTAY62F35G.com.oaknorth.bonsai.prelive",
+        "paths": ["/instantfunding/*"]
+      },
+	{
+        "appID": "XTAY62F35G.com.oaknorth.bonsai.staging",
+        "paths": ["/instantfunding/*"]
+      },
+	{
+        "appID": "XTAY62F35G.com.oaknorth.bonsai",
+        "paths": ["/instantfunding/*"]
       }
     ]
   }

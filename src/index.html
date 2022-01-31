@@ -14,23 +14,40 @@
  <title>Oaknorth Instant Funding</title>
  <!-- JavaScript Bundle with Popper -->
  <script src="./assets/js/bootstrap.bundle.min.js.download" crossorigin="anonymous"></script>
- <!-- <script type="text/javascript">
-   (function () {
-     var cnt = 0;
-     var isloadedOnce = window.sessionStorage.getItem("l");
-     if (!window.location.hash) {               
-       window.location = window.location + "#sucess";
-       window.sessionStorage.setItem("l", cnt)
-       window.location.reload();
-     }
-   })();
- </script> -->
 </head>
-<body class="bg-light">
+<body data-new-gr-c-s-check-loaded="14.1047.0" data-gr-ext-installed="">
   <app-root></app-root>
   <script>
+    window.onload = function () {
+        window.location.href = window.location; // Your app's URL to open the app
+        setTimeout(function () {
+          const ua = navigator.userAgent
+          if (/android/i.test(ua)) {
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.oaknorth.oaknorthmobilebanking'; //'YOUR_APP_PLAY_STORE_LINK';
+          }
+          else if ((/iPad|iPhone|iPod/.test(ua))
+            || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+              window.location.href = 'https://apps.apple.com/gb/app/oaknorth-mobile-banking/id1476387507'; //'YOUR_APP_iOS_STORE_LINK';
+          }
+            
+        }, 5000);
+    }
+    const getMobileOS = () => {
+      const ua = navigator.userAgent
+      if (/android/i.test(ua)) {
+        return "Android"
+      }
+      else if ((/iPad|iPhone|iPod/.test(ua))
+        || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+        return "iOS"
+      }
+      return "Other"
+    }
+    const os = getMobileOS()
+    console.log(os) 
+  
     function loadApp() {
-      window.location.reload();
+      window.open(window.location, '_blank');
     }
   </script>
 </body>

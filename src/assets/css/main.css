@@ -1,22 +1,134 @@
-.pt-80 {
-  padding-top: 80px;
+.img-playstore {
+  /* padding: 0.25rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.1rem; */
+  width:100px;
 }
 
+.img-appstore {
+  padding: 0.30rem;
+  /* border: 1px solid #dee2e6; */
+  /* border-radius: 0.1rem; */
+  width:100px;
+}
+
+/* Create three equal columns that floats next to each other */
+.columns {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 97px;
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pt-10 {
+  padding: 10px;
+  background-color: #fff !important;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 550px;
+}
+
+.pt-80 {
+  padding: 1px 36px 100px 36px;
+  background-color: #fff !important;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 550px;
+  margin-top: 100px;
+}
+
+
+.btnFooter{
+position: absolute;
+bottom: 20px;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+}
+
+.spinCol{
+width: 25%;
+margin-top: 15px;
+
+}
+.txt-header{
+font-size: 24px;
+  font-weight: 400;
+}
 .bg-green {
-  background: rgb(57, 172, 124);
-  border-color: rgb(57, 172, 124);
-  color:white;
+background: rgb(57, 172, 124);
+border-color: rgb(57, 172, 124);
+color:white;
 }
 
 .bg-green:hover{
-    background: rgb(0,83,80);
-    border-color: rgb(0,83,80);
-    color:white;
+  background: rgb(0,83,80);
+  border-color: rgb(0,83,80);
+  color:white;
 }
 
 .bg-green:focus{
-    background: rgb(0,83,80);
-    border-color: rgb(0,83,80);
-    box-shadow: 0 0 0 0.25rem rgb(0 83 80 / 50%);
-    color:white;
+  background: rgb(0,83,80);
+  border-color: rgb(0,83,80);
+  box-shadow: 0 0 0 0.25rem rgb(0 83 80 / 50%);
+  color:white;
 }
+
+/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
+.spinner {
+/* margin: 10px auto 0; */
+width: 70px;
+text-align: center;
+}
+
+.spinner > div {
+width: 5px;
+height: 5px;
+background-color:  #005350;
+;
+
+border-radius: 100%;
+display: inline-block;
+-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+-webkit-animation-delay: -0.32s;
+animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+-webkit-animation-delay: -0.16s;
+animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+0%, 80%, 100% { -webkit-transform: scale(0) }
+40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+0%, 80%, 100% { 
+  -webkit-transform: scale(0);
+  transform: scale(0);
+} 40% { 
+  -webkit-transform: scale(1.0);
+  transform: scale(1.0);
+}
+}
+
+@media (min-width: 576px){
+.container, .container-sm {
+  padding: 0px 15%;
+}}
